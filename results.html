@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>The suggested movies are:</h1>
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Budget</th>
+            <th>Director</th>
+            <th>Rating</th>
+            <th>Cast</th>
+        </tr>
+        {% for row in table %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
